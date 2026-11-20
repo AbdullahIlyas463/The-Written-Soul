@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Written Soul — bilingual short stories in English and Urdu by Abdullah Ilyas.">
+<title>The Written Soul — Stories by Abdullah Ilyas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Noto+Nastaliq+Urdu:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="The Written Soul, home">
+    <b>✦</b>
+    <span>The Written Soul<small>Stories by Abdullah Ilyas</small></span>
+  </a>
+  <nav>
+    <a href="#stories">Stories</a>
+    <a href="#about">About</a>
+  </nav>
+  <button id="theme" type="button" aria-label="Switch light or dark mode" title="Light / dark">◐</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">A quiet place for big feelings</p>
+      <h1>Some stories are read.<br><em>Others are felt.</em></h1>
+      <p class="lead">Love, loss, memory and all the words we carry but never quite say. Stories in English &amp; اردو.</p>
+      <p class="byline">by <span class="sig">Abdullah Ilyas</span></p>
+      <a class="btn" href="#stories">Begin reading <span>↓</span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="moon"></div>
+      <i class="star s1"></i><i class="star s2"></i><i class="star s3"></i><i class="star s4"></i>
+      <div class="deco-book one"></div>
+      <div class="deco-book two"></div>
+      <div class="deco-book three"></div>
+      <span class="art-note">Vol. 01 — The Human Heart</span>
+    </div>
+    <div class="hero-foot"><span>Original fiction</span><span id="heroCount">10 stories</span><span>English &amp; اردو</span></div>
+  </section>
+
+  <section class="intro">
+    <p>“Some of the deepest wounds are not caused by what happened to us, but by what never happened, what was never said, and what we slowly became.”</p>
+    <small>— A note from the author</small>
+  </section>
+
+  <section class="library" id="stories">
+    <div class="heading">
+      <div>
+        <p class="eyebrow">The library</p>
+        <h2>Stories to <em>stay with you.</em></h2>
+      </div>
+      <small id="count"></small>
+    </div>
+    <div class="tools">
+      <input id="search" type="search" placeholder="Search by title or feeling…" aria-label="Search stories">
+      <div id="filters" role="group" aria-label="Filter by category"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p id="empty" hidden>No stories found. Try another title or category.</p>
+  </section>
+
+  <section class="quote">
+    <span class="qmark">“</span>
+    <p>There are things we never say aloud.<br><em>Sometimes, stories say them for us.</em></p>
+    <small>A thought to keep</small>
+  </section>
+
+  <section class="about" id="about">
+    <div class="stamp"><span>Words<br>that<br>remain</span></div>
+    <div>
+      <p class="eyebrow">About this place</p>
+      <h2>Written for the parts<br>of us <em>that feel.</em></h2>
+      <p>The Written Soul is a growing collection of original short fiction in English and Urdu. Every story begins with a feeling, a question, or a moment that refuses to leave. Read slowly. Stay a while.</p>
+      <p class="byline big">— <span class="sig">Abdullah Ilyas</span></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <b>The Written Soul ✦</b>
+  <span>Stories by <span class="sig small">Abdullah Ilyas</span> · Made of words, memory &amp; feeling.</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<div class="reader" id="reader" aria-hidden="true">
+  <div class="shade" id="shade"></div>
+  <article role="dialog" aria-modal="true" aria-labelledby="title">
+    <div class="reader-top">
+      <button id="back" type="button">← Back to stories</button>
+      <button id="font" type="button" aria-label="Change text size" title="Text size">Aa</button>
+    </div>
+    <div class="reader-content">
+      <p class="eyebrow" id="meta"></p>
+      <h2 id="title"></h2>
+      <div class="urdu-title" id="utitle"></div>
+      <p class="reader-by">by <span class="sig">Abdullah Ilyas</span></p>
+      <hr>
+      <div class="langs" id="langs">
+        <button class="active" data-lang="english" type="button">English</button>
+        <button data-lang="urdu" type="button">اردو</button>
+      </div>
+      <blockquote id="quote"></blockquote>
+      <div id="body"></div>
+      <div class="end">✦<p>Thank you for reading.<br><em>Carry a little of this story with you.</em></p></div>
+      <div class="next">
+        <button id="prev" type="button">← Previous story</button>
+        <button id="next" type="button">Next story →</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<script src="stories.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
